@@ -1,3 +1,15 @@
 {
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "labs-postgres-warm-tight-quill.postgres.databases.labs.skills.network",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "IBM Labs PostgresQL",
+            "database": "DW",
+            "username": "postgres",
+            "password": "M5mvs42nBDXJ963snejNJEjn"
+        }
+    ],
     "python-envs.pythonProjects": []
 }
