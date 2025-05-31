@@ -1,0 +1,28 @@
+2025-May-31-23:43:02 : Preliminaries complete. Initiating ETL process
+2025-May-31-23:43:03 :          Country GDP_USD_millions
+0  United States       26,854,599
+1          China       19,373,586
+2          Japan        4,409,738
+3        Germany        4,308,854
+4          India        3,736,882
+2025-May-31-23:43:03 : Data extraction complety from https://web.archive.org/web/20230902185326/https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29.
+Initiating Transformation process
+2025-May-31-23:43:03 :          Country  GDP_USD_billions
+0  United States           26855.0
+1          China           19374.0
+2          Japan            4410.0
+3        Germany            4309.0
+4          India            3737.0
+2025-May-31-23:43:03 : Data transformation complete. Initiating loading process
+2025-May-31-23:43:03 : Data saved to CSV file: : Countries_by_GDP.csv
+2025-May-31-23:43:03 : SQL Connection initiated.
+2025-May-31-23:43:03 : Data loaded to Database as table. Running the query
+2025-May-31-23:43:03 : SQL Query executed: SELECT * from Countries_by_GDP WHERE GDP_USD_billions >= 100
+2025-May-31-23:43:03 : Results:
+2025-May-31-23:43:03 :          Country  GDP_USD_billions
+0  United States           26855.0
+1          China           19374.0
+2          Japan            4410.0
+3        Germany            4309.0
+4          India            3737.0
+2025-May-31-23:43:03 : Process Complete.
