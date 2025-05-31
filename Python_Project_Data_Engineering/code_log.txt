@@ -1,0 +1,53 @@
+2025-Jun-01-02:44:03 : Preliminaries complete. Initiating ETL process
+2025-Jun-01-02:44:04 :                                       Name  MC_USD_Billion
+0                           JPMorgan Chase          432.92
+1                          Bank of America          231.52
+2  Industrial and Commercial Bank of China          194.56
+3               Agricultural Bank of China          160.68
+4                                HDFC Bank          157.91
+5                              Wells Fargo          155.87
+6                                     HSBC          148.90
+7                           Morgan Stanley          140.83
+8                  China Construction Bank          139.82
+9                            Bank of China          136.81
+2025-Jun-01-02:44:04 :                                       Name  MC_USD_Billion
+0                           JPMorgan Chase          432.92
+1                          Bank of America          231.52
+2  Industrial and Commercial Bank of China          194.56
+3               Agricultural Bank of China          160.68
+4                                HDFC Bank          157.91
+5                              Wells Fargo          155.87
+6                                     HSBC          148.90
+7                           Morgan Stanley          140.83
+8                  China Construction Bank          139.82
+9                            Bank of China          136.81
+2025-Jun-01-02:44:04 : Data extraction complete. Initiating Transformation process
+2025-Jun-01-02:44:05 : Data transformation complete. Initiating Loading process
+2025-Jun-01-02:44:05 : df['MC_EUR_Billion'][4] = 146.86
+2025-Jun-01-02:44:05 : Data saved to CSV file
+2025-Jun-01-02:44:05 : SQL Connection initiated
+2025-Jun-01-02:44:05 : Data loaded to Database as a table, Executing queries
+2025-Jun-01-02:44:05 : SQL Query executed: SELECT * FROM Largest_banks
+2025-Jun-01-02:44:05 :                                       Name  MC_USD_Billion  MC_GBP_Billion  MC_EUR_Billion  MC_INR_Billion
+0                           JPMorgan Chase          432.92          346.34          402.62        35910.71
+1                          Bank of America          231.52          185.22          215.31        19204.58
+2  Industrial and Commercial Bank of China          194.56          155.65          180.94        16138.75
+3               Agricultural Bank of China          160.68          128.54          149.43        13328.41
+4                                HDFC Bank          157.91          126.33          146.86        13098.63
+5                              Wells Fargo          155.87          124.70          144.96        12929.42
+6                                     HSBC          148.90          119.12          138.48        12351.26
+7                           Morgan Stanley          140.83          112.66          130.97        11681.85
+8                  China Construction Bank          139.82          111.86          130.03        11598.07
+9                            Bank of China          136.81          109.45          127.23        11348.39
+2025-Jun-01-02:44:05 : SQL Query executed: SELECT AVG(MC_GBP_Billion) FROM Largest_banks
+2025-Jun-01-02:44:05 :    AVG(MC_GBP_Billion)
+0              151.987
+2025-Jun-01-02:44:05 : SQL Query executed: SELECT Name from Largest_banks LIMIT 5
+2025-Jun-01-02:44:05 :                                       Name
+0                           JPMorgan Chase
+1                          Bank of America
+2  Industrial and Commercial Bank of China
+3               Agricultural Bank of China
+4                                HDFC Bank
+2025-Jun-01-02:44:05 : Process Complete
+2025-Jun-01-02:44:05 : Server Connection closed

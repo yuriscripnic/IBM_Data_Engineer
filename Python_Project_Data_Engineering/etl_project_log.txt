@@ -1,0 +1,9 @@
+2025-Jun-01-01:20:13 : Preliminaries complete. Initiating ETL process
+2025-Jun-01-01:20:16 :          Country GDP_USD_millions
+0  United States       26,854,599
+1          China       19,373,586
+2          Japan        4,409,738
+3        Germany        4,308,854
+4          India        3,736,882
+2025-Jun-01-01:20:16 : Data extraction complety from https://web.archive.org/web/20230902185326/https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29.
+Initiating Transformation process

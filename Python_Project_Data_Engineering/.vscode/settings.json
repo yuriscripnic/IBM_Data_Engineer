@@ -6,6 +6,12 @@
             "driver": "SQLite",
             "name": "World_Economies.db",
             "database": "World_Economies.db"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Banks.db",
+            "database": "Banks.db"
         }
     ]
 }
