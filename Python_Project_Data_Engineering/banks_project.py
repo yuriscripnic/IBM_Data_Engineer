@@ -131,6 +131,7 @@ log_progress("Data extraction complete. Initiating Transformation process")
 
 df = transform(df, csv_path=exchange_rate_csv)
 log_progress("Data transformation complete. Initiating Loading process")
+log_progress(df)
 log_progress(f"df['MC_EUR_Billion'][4] = {df['MC_EUR_Billion'][4]}")
 
 load_to_csv(df, output_csv_path)
